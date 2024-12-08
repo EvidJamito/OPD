@@ -1,0 +1,270 @@
+.servicesLayout {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .mainContainer {
+    background-color: rgba(245, 246, 250, 1);
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    padding: 16px 0;
+  }
+  
+  .brandHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .brandName {
+    color: rgba(72, 128, 255, 1);
+    font: 800 20px 'Nunito Sans', sans-serif;
+  }
+  
+  .brandNameDark {
+    color: rgba(32, 34, 36, 1);
+  }
+  
+  .brandSubtitle {
+    color: rgba(72, 128, 255, 1);
+    font: 800 14px 'Nunito Sans', sans-serif;
+  }
+  
+  .brandSubtitleDark {
+    color: rgba(0, 0, 0, 1);
+  }
+  
+  .sidebarNav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .sidebarItem {
+    display: flex;
+    align-items: center;
+    padding: 13px 41px;
+    border: none;
+    background: none;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+  }
+  
+  .sidebarItem:hover {
+    background-color: rgba(245, 246, 250, 1);
+  }
+  
+  .activeItem {
+    background-color: rgba(245, 246, 250, 1);
+  }
+  
+  .activeIndicator {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 24px;
+    background-color: rgba(72, 128, 255, 1);
+    border-radius: 0 2px 2px 0;
+  }
+  
+  .itemContent {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .itemIcon {
+    font-size: 18px;
+    color: rgba(32, 34, 36, 1);
+  }
+  
+  .itemLabel {
+    font: 600 14px 'Nunito Sans', sans-serif;
+    color: rgba(32, 34, 36, 1);
+  }
+  
+  .mainContent {
+    flex: 1;
+    padding: 24px;
+  }
+  
+  .topBar {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+  
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(245, 246, 250, 1);
+    padding: 8px 16px;
+    border-radius: 19px;
+    border: 1px solid rgba(213, 213, 213, 1);
+  }
+  
+  .searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    font: 400 14px 'Nunito Sans', sans-serif;
+    width: 200px;
+  }
+  
+  .userControls {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .languageSelector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font: 600 14px 'Nunito Sans', sans-serif;
+    color: rgba(100, 100, 100, 1);
+  }
+  
+  .userProfile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .userName {
+    font: 700 14px 'Nunito Sans', sans-serif;
+    color: rgba(64, 64, 64, 1);
+  }
+  
+  .userRole {
+    font: 600 12px 'Nunito Sans', sans-serif;
+    color: rgba(86, 86, 86, 1);
+  }
+  
+  .notificationButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .pageTitle {
+    font: 700 32px 'Nunito Sans', sans-serif;
+    color: rgba(32, 34, 36, 1);
+    letter-spacing: -0.11px;
+  }
+  
+  .addServiceButton {
+    background-color: rgba(67, 121, 238, 1);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 11px 16px;
+    font: 700 14px 'Nunito Sans', sans-serif;
+    cursor: pointer;
+  }
+  
+  .sectionTitle {
+    font: 700 32px 'Nunito Sans', sans-serif;
+    color: rgba(32, 34, 36, 1);
+    letter-spacing: -0.11px;
+    margin-bottom: 24px;
+  }
+  
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  
+  .serviceCard {
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 6px 6px 54px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+  }
+  
+  .serviceImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .serviceTitle {
+    font: 700 16px 'Nunito Sans', sans-serif;
+    color: rgba(32, 34, 36, 1);
+    margin: 16px 0;
+  }
+  
+  .messageButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 26px;
+    border: 1px solid rgba(151, 151, 151, 1);
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .messageText {
+    font: 700 14px 'Nunito Sans', sans-serif;
+    color: rgba(118, 118, 118, 1);
+  }
+  
+  @media (max-width: 991px) {
+    .mainContainer {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+    }
+  
+    .servicesGrid {
+      grid-template-columns: 1fr;
+    }
+  }

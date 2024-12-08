@@ -1,0 +1,29 @@
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .inputLabel {
+    color: rgba(32, 34, 36, 1);
+    letter-spacing: -0.06px;
+    font: 600 18px Nunito Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .inputField {
+    border-radius: 8px;
+    background-color: rgba(241, 244, 249, 1);
+    padding: 16px;
+    color: rgba(166, 166, 166, 1);
+    letter-spacing: -0.06px;
+    font: 600 18px Nunito Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    border: 1px solid rgba(216, 216, 216, 1);
+  }
+  
+  @media (max-width: 991px) {
+    .inputField {
+      max-width: 100%;
+      padding-right: 20px;
+    }
+  }

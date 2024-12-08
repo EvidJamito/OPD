@@ -1,0 +1,35 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+
+.inputLabel {
+  color: rgba(32, 34, 36, 1);
+  letter-spacing: -0.06px;
+  font: 600 18px Nunito Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.inputField {
+  border-radius: 8px;
+  background-color: rgba(241, 244, 249, 1);
+  width: 100%;
+  color: rgba(166, 166, 166, 1);
+  letter-spacing: -0.06px;
+  padding: 16px;
+  font: 600 18px Nunito Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  border: 1px solid rgba(216, 216, 216, 1);
+}
+
+.inputIcon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}

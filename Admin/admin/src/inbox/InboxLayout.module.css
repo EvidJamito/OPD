@@ -1,0 +1,363 @@
+.inboxContainer {
+    background-color: #ffffff;
+    overflow: hidden;
+    min-height: 100vh;
+  }
+  
+  .layoutWrapper {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+  }
+  
+  .sidebarColumn {
+    width: 17%;
+    background-color: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    min-height: 100vh;
+    padding: 24px 0;
+  }
+  
+  .sidebarNav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    color: #4880ff;
+    margin-bottom: 4px;
+  }
+  
+  .logoText {
+    color: #202224;
+  }
+  
+  .logoSubtext {
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    color: #4880ff;
+    margin-bottom: 24px;
+  }
+  
+  .systemText {
+    color: #000000;
+  }
+  
+  .menuItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 40px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: #202224;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .menuItem:hover {
+    background-color: #f5f6fa;
+  }
+  
+  .activeMenuItem {
+    background-color: #4880ff;
+    color: #ffffff;
+  }
+  
+  .menuIcon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menuCount {
+    margin-left: auto;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .pagesSeparator {
+    padding: 24px 40px 8px;
+    color: #6b7280;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  
+  .mainColumn {
+    flex: 1;
+    background-color: #f5f6fa;
+    padding: 24px;
+  }
+  
+  .topBar {
+    background-color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .searchWrapper {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #f5f6fa;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 8px 16px;
+  }
+  
+  .searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    color: #202224;
+  }
+  
+  .userControls {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .languageSelector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .languageSelector:hover {
+    background-color: #f5f6fa;
+  }
+  
+  .userProfile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .userProfile:hover {
+    background-color: #f5f6fa;
+  }
+  
+  .userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .userName {
+    font-weight: 700;
+    color: #404040;
+    font-size: 14px;
+  }
+  
+  .userRole {
+    color: #565656;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .emailSection {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+  }
+  
+  .sectionTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #202224;
+    margin-bottom: 24px;
+  }
+  
+  .emailList {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: #e5e7eb;
+  }
+  
+  .emailItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .emailItem:hover {
+    background-color: #f5f6fa;
+  }
+  
+  .emailCheckbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #b3b3b3;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .senderIcon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  
+  .emailContent {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .sender {
+    font-weight: 700;
+    color: #202224;
+    width: 140px;
+  }
+  
+  .labelWrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .emailLabel {
+    padding: 4px 12px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .emailLabel[data-label="Primary"] {
+    background-color: #00b69b;
+    color: #ffffff;
+  }
+  
+  .emailLabel[data-label="Work"] {
+    background-color: #fd9a56;
+    color: #ffffff;
+  }
+  
+  .emailLabel[data-label="Friends"] {
+    background-color: #d456fd;
+    color: #ffffff;
+  }
+  
+  .subject {
+    color: #202224;
+    font-weight: 600;
+  }
+  
+  .time {
+    color: #202224;
+    font-size: 14px;
+    font-weight: 600;
+    width: 80px;
+    text-align: right;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    margin-top: 16px;
+  }
+  
+  .paginationText {
+    color: #202224;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .paginationControls {
+    display: flex;
+    gap: 8px;
+  }
+  
+  @media (max-width: 991px) {
+    .layoutWrapper {
+      flex-direction: column;
+    }
+  
+    .sidebarColumn {
+      width: 100%;
+      min-height: auto;
+      border-right: none;
+      border-bottom: 1px solid #e5e7eb;
+    }
+  
+    .mainColumn {
+      padding: 16px;
+    }
+  
+    .topBar {
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .searchWrapper {
+      max-width: 100%;
+    }
+  
+    .userControls {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .emailContent {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  
+    .sender {
+      width: auto;
+    }
+  
+    .time {
+      width: auto;
+      text-align: left;
+    }
+  }

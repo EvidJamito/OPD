@@ -1,0 +1,257 @@
+.reports {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainBg {
+  background-color: #f5f6fa;
+  width: 100%;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+}
+
+.sidebar {
+  background-color: #fff;
+  width: 17%;
+  padding: 16px 0;
+  min-height: 100vh;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logoText {
+  color: #4880ff;
+  font: 800 20px 'Nunito Sans', sans-serif;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 13px 41px;
+  cursor: pointer;
+}
+
+.sidebarItem.active {
+  background-color: #fff;
+  color: #030000;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  background-color: #fff;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.searchContainer {
+  flex: 1;
+  max-width: 400px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 19px;
+  border: 1px solid #d5d5d5;
+  background-color: #f5f6fa;
+}
+
+.userControls {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.languageSelector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-weight: 700;
+  color: #404040;
+}
+
+.userRole {
+  font-size: 12px;
+  color: #565656;
+}
+
+.reportsSection {
+  margin-top: 24px;
+}
+
+.pageTitle {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.filterBar {
+  background-color: #fff;
+  padding: 16px 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.filterGroup {
+  display: flex;
+  gap: 16px;
+}
+
+.filterButton {
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.resetButton {
+  color: #ea0234;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tableContainer {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 16px;
+  background-color: #fcfdfd;
+  border-radius: 14px;
+  font-weight: 800;
+}
+
+.tableBody {
+  margin-top: 16px;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 16px;
+  align-items: center;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.statusCompleted {
+  background-color: #00b69b;
+  color: #fff; /* Text color for contrast */
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.statusProcessing {
+  background-color: #6226ef;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.statusRejected {
+  background-color: #ef3826;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .mainContent {
+    padding: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .searchContainer {
+    width: 100%;
+  }
+
+  .filterBar {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .filterGroup {
+    flex-wrap: wrap;
+  }
+
+  .tableContainer {
+    overflow-x: auto;
+  }
+} 

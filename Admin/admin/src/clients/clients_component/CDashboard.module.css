@@ -1,0 +1,310 @@
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  .layout {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 280px;
+    background-color: #fff;
+    padding: 24px 0;
+    border-right: 1px solid #eee;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  
+  .logoMain {
+    color: #4880ff;
+    font: 800 24px 'Nunito Sans', sans-serif;
+  }
+  
+  .logoSecondary {
+    color: #202224;
+    font: 800 24px 'Nunito Sans', sans-serif;
+  }
+  
+  .logoSubtitle {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .logoSubtitleMain {
+    color: #4880ff;
+    font: 800 16px 'Nunito Sans', sans-serif;
+  }
+  
+  .logoSubtitleSecondary {
+    color: #000;
+    font: 800 16px 'Nunito Sans', sans-serif;
+  }
+  
+  .sidebarItem {
+    display: flex;
+    align-items: center;
+    padding: 16px 40px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s;
+  }
+  
+  .sidebarItem:hover {
+    background-color: #f5f6fa;
+  }
+  
+  .sidebarItem.active {
+    background-color: #fff;
+  }
+  
+  .sidebarItem.active .label {
+    color: #fff;
+  }
+  
+  .activeIndicator {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 24px;
+    background-color: #4880ff;
+    border-radius: 0 2px 2px 0;
+  }
+  
+  .mainContent {
+    flex: 1;
+    background-color: #f5f6fa;
+    padding: 24px;
+  }
+  
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 16px 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+  
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    background-color: #f5f6fa;
+    border-radius: 19px;
+    padding: 8px 16px;
+    border: 1px solid #d5d5d5;
+  }
+  
+  .searchInput {
+    border: none;
+    background: none;
+    margin-left: 8px;
+    font: 400 14px 'Nunito Sans', sans-serif;
+    width: 200px;
+  }
+  
+  .searchInput:focus {
+    outline: none;
+  }
+  
+  .userControls {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .languageSelector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font: 600 14px 'Nunito Sans', sans-serif;
+    color: #646464;
+  }
+  
+  .userProfile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .userInfo {
+    text-align: left;
+  }
+  
+  .userName {
+    color: #404040;
+    font: 700 14px 'Nunito Sans', sans-serif;
+  }
+  
+  .userRole {
+    color: #565656;
+    font: 600 12px 'Nunito Sans', sans-serif;
+  }
+  
+  .clientSection {
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 24px;
+  }
+  
+  .sectionTitle {
+    color: #202224;
+    font: 700 32px 'Nunito Sans', sans-serif;
+    margin-bottom: 24px;
+  }
+  
+  .filterBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9fb;
+    padding: 16px 24px;
+    border-radius: 10px;
+    border: 1px solid #d5d5d5;
+    margin-bottom: 24px;
+  }
+  
+  .filterControls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font: 700 14px 'Nunito Sans', sans-serif;
+  }
+  
+  .filterDivider {
+    width: 1px;
+    height: 24px;
+    background-color: #d5d5d5;
+  }
+  
+  .resetFilter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ea0234;
+    font: 600 14px 'Nunito Sans', sans-serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .clientTable {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  
+  .tableHeader {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 2fr 1.5fr 1fr;
+    padding: 16px 24px;
+    background-color: #fcfdfd;
+    border-radius: 14px 14px 0 0;
+    border: 1px solid #d5d5d5;
+  }
+  
+  .headerCell {
+    color: #202224;
+    font: 800 14px 'Nunito Sans', sans-serif;
+  }
+  
+  .tableRow {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 2fr 1.5fr 1fr;
+    padding: 16px 24px;
+    border-bottom: 1px solid #eee;
+    font: 600 14px 'Nunito Sans', sans-serif;
+  }
+  
+  .statusFilterContainer {
+    background-color: #fff;
+    border-radius: 26px;
+    box-shadow: 0 13px 61px rgba(169, 169, 169, 0.366);
+    padding: 24px;
+    margin: 24px 0;
+  }
+  
+  .filterTitle {
+    color: #202224;
+    font: 700 18px 'Nunito Sans', sans-serif;
+    margin-bottom: 16px;
+  }
+  
+  .filterOptions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .filterButton {
+    padding: 8px 24px;
+    border-radius: 17px;
+    border: 1px solid #979797;
+    background: none;
+    font: 600 14px 'Nunito Sans', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .filterButton.selected {
+    background-color: #4880ff;
+    color: #fff;
+    border-color: #4880ff;
+  }
+  
+  .filterNote {
+    color: #434343;
+    font: 400 14px 'Nunito Sans', sans-serif;
+    margin-bottom: 16px;
+  }
+  
+  .applyButton {
+    background-color: #4880ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 24px;
+    font: 700 12px 'Nunito Sans', sans-serif;
+    cursor: pointer;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
+  
+  .paginationInfo {
+    color: #202224;
+    font: 600 14px 'Nunito Sans', sans-serif;
+  }
+  
+  @media (max-width: 1200px) {
+    .sidebar {
+      width: 240px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .layout {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #eee;
+    }
+  
+    .mainContent {
+      padding: 16px;
+    }
+  }

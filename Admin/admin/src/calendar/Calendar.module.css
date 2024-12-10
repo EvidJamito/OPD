@@ -1,0 +1,252 @@
+.calendar {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mainBg {
+  background: #F5F6FA;
+  width: 100%;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+}
+
+.sidebarColumn {
+  width: 17%;
+}
+
+.mainColumn {
+  width: 83%;
+  margin-left: 20px;
+}
+
+.sideBarBg {
+  background: #fff;
+  padding: 16px 0;
+  min-height: 100vh;
+}
+
+.logo {
+  text-align: center;
+  font: 800 20px 'Nunito Sans', sans-serif;
+}
+
+.logoHighlight {
+  color: #4880FF;
+}
+
+.logoText {
+  color: #202224;
+}
+
+.subTitle {
+  text-align: center;
+  font: 800 14px 'Nunito Sans', sans-serif;
+}
+
+.highlight {
+  color: #4880FF;
+}
+
+.sidebarItem {
+  display: flex;
+  gap: 16px;
+  padding: 16px 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebarItem.active {
+  background: #fff;
+  color: #000000;
+}
+
+.topBarBg {
+  background: #fff;
+  padding: 13px 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.searchInput {
+  background: #F5F6FA;
+  border: 1px solid #D5D5D5;
+  border-radius: 19px;
+  padding: 10px 17px;
+  width: 300px;
+}
+
+.userControls {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.languageSelector {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #646464;
+  font: 600 14px 'Nunito Sans', sans-serif;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  color: #404040;
+  font: 700 14px 'Nunito Sans', sans-serif;
+}
+
+.userRole {
+  color: #565656;
+  font: 600 12px 'Nunito Sans', sans-serif;
+}
+
+.calendarContent {
+  padding: 30px 17px 0;
+}
+
+.pageTitle {
+  font: 700 32px 'Nunito Sans', sans-serif;
+  letter-spacing: -0.11px;
+  color: #202224;
+  margin-bottom: 22px;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.weekDays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #F1F4F9;
+  border-radius: 12px 12px 0 0;
+  padding: 15px 49px;
+  font: 700 14px 'Nunito Sans', sans-serif;
+  text-align: center;
+}
+
+.reactCalendar {
+  border: none;
+  width: 100%;
+  max-width: 1200px; 
+  height: 4000px; 
+  background: #fff;
+  border-radius: 12px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px; 
+  margin: 0 auto; 
+}
+
+.reactCalendar .react-calendar__month-view__days__day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  color: #404040;
+  cursor: pointer;
+}
+
+.reactCalendar .react-calendar__month-view__days__day--weekend {
+  color: #4880FF;
+}
+
+.reactCalendar .react-calendar__tile--active {
+  background: #4880FF;
+  color: #fff;
+  border-radius: 8px;
+  height: 60px; 
+  width: 60px; 
+}
+
+.reactCalendar .react-calendar__navigation button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #404040;
+}
+
+.reactCalendar .react-calendar__month-view__weekdays {
+  text-align: center;
+  font-weight: bold;
+  color: #646464;
+  font-size: 18px; 
+}
+
+.reactCalendar .react-calendar__tile {
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  height: 60px; 
+  width: 60px; 
+}
+
+.reactCalendar .react-calendar__tile:hover {
+  background: #f1f4f9;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 991px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebarColumn,
+  .mainColumn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .weekDays {
+    padding: 15px 20px;
+  }
+
+  .topBarBg {
+    padding: 13px 20px;
+  }
+
+  .reactCalendar {
+    max-width: 200%;
+    height: auto;
+  }
+}
